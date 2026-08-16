@@ -117,12 +117,21 @@
 
     <build>
         <plugins>
-            <!-- SonarQube Maven Plugin -->
-            <plugin>
-                <groupId>org.sonarsource.scanner.maven</groupId>
-                <artifactId>sonar-maven-plugin</artifactId>
-                <version>5.3.1.4403</version>
-            </plugin>
+            <build>
+    <plugins>
+
+        <!-- Jetty Maven Plugin -->
+        <plugin>
+            ...
+        </plugin>
+
+        <!-- Jacoco Maven Plugin -->
+        <plugin>
+            ...
+        </plugin>
+
+    </plugins>
+</build>
 
             <!-- Jetty Maven Plugin -->
             <plugin>
